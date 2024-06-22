@@ -1,0 +1,259 @@
+/* background: #1e202b; */
+/* color: #009ad8; */
+/* rgb(191, 193, 200)  Day text color */
+
+/* background: #262936; */
+:root {
+    --primary-color: #1e202b;
+    --secondary-color: #2e3140;
+    --babyplue-color: #009ad8;
+    --light-text-color: rgb(191, 193, 200);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: 120px;
+
+    .navbar-collapse {
+        flex-grow: 0 !important;
+    }
+
+    a {
+        p {
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: "Josefin Sans", sans-serif;
+
+        }
+
+        small {
+            color: var(--light-text-color);
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 15px;
+            font-family: "Josefin Sans", sans-serif;
+
+        }
+    }
+
+    .navbar-nav li {}
+
+    .navbar-nav li .nav-link {
+        /* border: 2px solid var(--babyplue-color) !important; */
+        border-radius: 30px;
+        font-size: 14px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+        line-height: 21px;
+        color: white;
+        padding: 2px 15px;
+        transition: all 0.5s;
+
+    }
+
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+        border: 2px solid var(--babyplue-color) !important;
+        border-radius: 30px;
+        padding: 2px 15px;
+
+        font-size: 14px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+        line-height: 21px;
+        color: var(--babyplue-color);
+    }
+
+}
+
+#Home {
+
+    /* background-color: #262936; */
+    /* background-color: #1e202b; */
+    .findLocation {
+        background-image: url(../images/banner.png);
+        padding-top: 70px;
+        padding-bottom: 20px;
+        min-height: 350px;
+        background-repeat: no-repeat;
+    }
+
+    .search {
+        input {
+            background-color: var(--primary-color);
+            height: 55px;
+            border-radius: 60px;
+            border: none;
+            outline: none;
+            color: white;
+            padding-left: 25px;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 70px;
+        }
+
+        .btn {
+            background-color: var(--babyplue-color);
+            height: 40px;
+            right: 12px;
+            top: 6.5px;
+            border-radius: 50px;
+            width: 12%;
+        }
+
+        input:focus {
+            border: none;
+        }
+    }
+
+    .forecast {
+        background-color: var(--secondary-color);
+
+    }
+
+    .forecast .header {
+        background-color: #252733;
+        font-size: 14px;
+        line-height: 21px;
+        color: var(--light-text-color);
+        font-family: "Josefin Sans", sans-serif;
+        padding-top: 15px;
+
+    }
+
+    .forecast .forecastContent {
+        padding: 20px 30px;
+
+        .temprature {
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 135px;
+            font-family: "Josefin Sans", sans-serif;
+            color: white;
+        }
+
+        .temprature span {
+            font-size: 50px;
+            vertical-align: text-top;
+        }
+
+        .forecastIcon {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        small {
+            color: #009ad8;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        #thirdDayStatus,
+        #secondDayStatus {
+            color: var(--light-text-color);
+
+        }
+
+        .details {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: var(--light-text-color);
+        }
+    }
+
+    #CurrentForecast {
+        border-radius: 10px 0px 0px 10px;
+
+        .header {
+            border-radius: 10px 0 0 0;
+        }
+    }
+
+    #ThirdForecast {
+        border-radius: 0 10px 10px 0;
+
+        .header {
+            border-radius: 0 10px 0 0;
+        }
+    }
+
+    .forecast .location {
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--light-text-color);
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    #middle {
+        background-color: #252733;
+
+        .header {
+            background-color: var(--primary-color);
+        }
+
+    }
+
+    #middle,
+    #ThirdForecast {
+        h2 {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 700;
+            color: white;
+            font-family: "Josefin Sans", sans-serif;
+
+        }
+
+        .forecastIcon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .footer {
+        background-color: var(--secondary-color);
+
+        .btn {
+            right: 1%;
+        }
+
+        .social .icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            transition: all 0.5s;
+        }
+
+        .social .icon:hover {
+            background-color: var(--babyplue-color);
+        }
+
+        .social .icon:hover i {
+            color: white;
+        }
+
+        .social .icon i {
+            color: var(--babyplue-color);
+            font-size: 15px;
+            transition: all 0.5s;
+
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+            color: var(--light-text-color);
+            font-family: "Josefin Sans", sans-serif;
+        }
+    }
+
+}
